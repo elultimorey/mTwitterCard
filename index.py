@@ -13,14 +13,7 @@ key = ""
 secret = ""
 
 
-consumer_key = ""
-consumer_secret = ""
-
-key = ""
-secret = ""
-
 class MainHandler(webapp.RequestHandler):
-<<<<<<< HEAD
 	def get(self, name):
 		if len(name) <= 0:
 			temp = os.path.join(os.path.dirname(__file__),
@@ -46,30 +39,6 @@ def response_card(self, name):
 			temp = os.path.join(os.path.dirname(__file__), 'templates/card.html')
 			if user.url is None:
 				user_url = ''
-=======
-	formdata = '''<form method="post" action="/">
-Introduce un nombre de usuario: <input type="text" name="resp"/><br />
-<input type="submit"/>
-</form>'''
-	def get(self):
-		temp = os.path.join(os.path.dirname(__file__),
-					'templates/index.html')
-		outstr = template.render(temp, 0)
-		self.response.headers['Content-Type'] = 'text/html'
-		self.response.out.write(outstr)
-	def post(self):
-		try:
-			auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-			auth.set_access_token(key, secret)
-			
-			api = tweepy.API(auth)
-			if api.rate_limit_status()['remaining_hits'] > 0:
-				user = api.get_user(self.request.get('resp'))
-				temp = os.path.join(os.path.dirname(__file__), 'templates/card.html')
-				outstr = template.render(temp, {'profile_image_url':user.profile_image_url.replace('_normal', '_reasonably_small'),'screen_name': user.screen_name, 'name': user.name, 'description': user.description, 'location': user.location, 'url': user.url, 'statuses_count': user.statuses_count, 'followings_count': user.friends_count, 'followers_count': user.followers_count})
-				self.response.headers['Content-Type'] = 'text/html'
-				self.response.out.write(outstr)
->>>>>>> d1f10eba2ea7bef9069239370f4e21830dfa0670
 			else:
 				user_url = user.url
 			outstr = template.render(temp, {'profile_image_url':user.profile_image_url.replace('_normal', '_reasonably_small'),'screen_name': user.screen_name, 'name': user.name, 'description': user.description, 'location': user.location, 'url': user_url, 'statuses_count': user.statuses_count, 'followings_count': user.friends_count, 'followers_count': user.followers_count})
