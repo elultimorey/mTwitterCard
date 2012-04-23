@@ -1,0 +1,112 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #DDDDDD;
+	min-height: 100%;
+	height: auto!important;
+	height: 100%;
+}
+
+#contenedor {
+	background-color: #fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+	background-image: -webkit-linear-gradient(top, #fff, #eee);
+	background-image: -moz-linear-gradient(top, #fff, #eee);
+	background-image: -ms-linear-gradient(top, #fff, #eee);
+	background-image: -o-linear-gradient(top, #fff, #eee);
+	background-image: linear-gradient(top, #fff, #eee);  
+	height: 160px;
+	width: 440px;
+	margin: 150px auto 0;
+	padding: 20px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;  
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	 -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+	 -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+	 box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;  
+}
+
+#profile_image {
+	float:left;
+	height: 128px;
+	width: 128px;
+}
+
+#profile_image img {
+	height: 128px;
+	width: 128px;
+}
+
+
+#bio {
+	float: left;
+	margin: 0 15px;
+	width: 280px;
+	height: 128px;
+}
+
+#bio p {
+	font-size: 15px;
+	margin: 0px;
+}
+
+#bio a {
+	text-decoration:none;
+	color: #019AD2; 
+}
+
+#bio a:hover {
+	text-decoration:none;
+	color: #016b92; 
+}
+
+.name {
+	float: left;
+	font-weight: bold;
+}
+
+.desc {
+	float: left;
+	font-style: italic;
+	width: 280px;
+}
+
+.location_url {
+	float: left;
+	font-style: italic;
+	color: #999999; 
+}
+
+#tff {
+	float: left;
+	margin:0 10px;
+	width: 418px;
+}
+
+#tff pre {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+}
+
+footer {
+	text-align: right;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: #666; 
+}
+
+footer {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: #999999; 
+}
+footer a {
+	text-decoration:none;
+	color: #019AD2; 
+}
+
+footer a:hover {
+	text-decoration:none;
+	color: #016b92; 
+}

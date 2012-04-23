@@ -1,0 +1,52 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #DDDDDD;
+}
+#contenedor {
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+    background-image: -webkit-linear-gradient(top, #fff, #eee);
+    background-image: -moz-linear-gradient(top, #fff, #eee);
+    background-image: -ms-linear-gradient(top, #fff, #eee);
+    background-image: -o-linear-gradient(top, #fff, #eee);
+    background-image: linear-gradient(top, #fff, #eee);  
+    height: 38px;
+    width: 500px;
+    margin: 150px auto 0;
+    padding: 20px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;  
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    
+     -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;  
+}
+
+#contenedor p {
+	margin: 0;
+}
+
+footer {
+	text-align: right;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: #666; 
+}
+
+footer {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: #999999; 
+}
+footer a {
+	text-decoration:none;
+	color: #019AD2; 
+}
+
+footer a:hover {
+	text-decoration:none;
+	color: #016b92; 
+}
+
