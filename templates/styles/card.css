@@ -1,0 +1,99 @@
+.links_zone { width: 440px;
+	margin: 0 auto;}
+.links_zone { text-align: right; }
+.links_zone ul { list-style-type: none; }
+.links_zone li { display: inline;
+   text-align: center;
+   margin: 0 0 0 10px; }
+.links_zone li a { color: #333; letter-spacing: 0; text-decoration: none; }
+.links_zone li a:hover { border-bottom: 3px solid #898989; }
+.links_zone li a:visited { letter-spacing: 0; text-decoration: none; }
+
+#contenedor {
+	width: 440px;
+	height: 160px;
+}
+
+#contenedor p {color: #000;}
+
+#profile_image {
+	float:left;
+	height: 128px;
+	width: 128px;
+}
+
+#profile_image img {
+	height: 128px;
+	width: 128px;
+}
+
+
+#bio {
+	float: left;
+	margin: 0 15px;
+	width: 280px;
+	height: 128px;
+}
+
+#bio p {
+	font-size: 15px;
+	margin: 0px;
+}
+
+#bio a {
+	text-decoration:none;
+	color: #019AD2; 
+}
+
+#bio a:hover {
+	text-decoration:none;
+	color: #016b92; 
+}
+
+.name {
+	float: left;
+	font-weight: bold;
+}
+
+.desc {
+	float: left;
+	width: 280px;
+}
+
+.location_url {
+	float: left;
+	font-size:12px !important;
+	font-style: italic;
+	color: #999999; 
+}
+
+#tff {
+	float: left;
+	margin:15px 10px;
+	width: 418px;
+	font-size:15px;
+}
+
+.tweets {
+	float:left;
+	text-align:left;
+	width:140px;
+}
+
+.followings {
+	float:left;
+	text-align:left;
+	margin:0 4px;
+	width:135px;
+}
+
+.followers {
+	float:left;
+	text-align:right;
+	width:135px;
+}
+
+.credits {
+	width: 460px;
+}
+

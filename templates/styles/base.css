@@ -1,0 +1,46 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #DDDDDD;
+}
+body p {color: #333;}
+
+#wrapper {
+	margin: 10% 0 0 0;
+}
+
+#contenedor {
+	background-color: #fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+	background-image: -webkit-linear-gradient(top, #fff, #eee);
+	background-image: -moz-linear-gradient(top, #fff, #eee);
+	background-image: -ms-linear-gradient(top, #fff, #eee);
+	background-image: -o-linear-gradient(top, #fff, #eee);
+	background-image: linear-gradient(top, #fff, #eee);  
+	margin: -10px auto 0;
+	padding: 20px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;  
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	 -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+	 -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+	 box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;  
+}
+
+.credits {
+	margin: 0 auto;
+	text-align: right; }
+
+.me {
+	font-size:10px;
+}
+
+
+.powered {
+	margin: -10px 0 -10px 10px;
+	opacity: 0.5;
+}
+
+.powered:hover {
+	opacity: 1;
+}
