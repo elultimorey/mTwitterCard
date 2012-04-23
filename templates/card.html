@@ -2,32 +2,48 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="styles/card_css.css" type="text/css">
-		<title>Twitter Card</title>
+		<link rel="stylesheet" href="styles/base.css" type="text/css">
+		<link rel="stylesheet" href="styles/card.css" type="text/css">
+		<title>mTwitterCard - {{ screen_name }}</title>
 	</head>
 	<body>
-		<div id="contenedor">
-			<div id='profile_image'>
-				<img src={{ profile_image_url }} />
+		<div id="wrapper">
+			<div class="links_zone">
+				<nav>
+					<ul>
+						<li><a href="qr/{{ screen_name }}">código qr</a></li>
+					</ul>
+				</nav>	
 			</div>
-			<div id='bio'>
-				<p class='name'>{{ name }} <a href=http://twitter.com/{{ screen_name }}>@{{ screen_name }}</a>
-				<p class='desc'>{{ description }}</p>
-				<p class=location_url>{{ location }} <a href={{ url }}>{{ url }}</a></p>
+			<div id="contenedor">				
+				<div id='profile_image'>
+					<img src={{ profile_image_url }} />
+				</div>
+				<div id='bio'>
+					<p class='name'>{{ name }} <a href=http://twitter.com/{{ screen_name }}>@{{ screen_name }}</a>
+					<p class='desc'>{{ description }}</p>
+					<p class=location_url>{{ location }} <a href={{ url }}>{{ url }}</a></p>
+				</div>
+				<div id='tff'>
+					<div class='tweets'>
+						<strong>Tweets:</strong> {{ statuses_count }}
+					</div>
+					<div class='followings'>
+						<strong>Followings:</strong> {{ followings_count }}
+					</div>
+					<div class='followers'>
+						<strong>Followers:</strong> {{ followers_count }}
+					</div>
+				</div>
 			</div>
-			<div id='tff'>
-				<pre><strong>Tweets:</strong> {{ statuses_count }}	<strong>Followings:</strong> {{ followings_count }}	<strong>Followers:</strong> {{ followers_count }}</pre>
+			<div class="credits">
+				<p class="me">© José Joaquín Pastor <a href="http://twitter.com/elultimorey">@elultimorey</a><a href="https://developers.google.com/appengine"><img class="powered" src="http://code.google.com/appengine/images/appengine-silver-120x30.gif" alt="Con la tecnología de Google App Engine" /></a></p>
 			</div>
 		</div>
+		
+		<div>
+			
+		</div>
 	</body>
-	<footer>
-		<p>
-			© José Joaquín Pastor <a href="http://twitter.com/elultimorey">@elultimorey</a> 
-		</p>
-		<p>
-			<a href="http://code.google.com/appengine/">
-				<img src="http://code.google.com/appengine/images/appengine-silver-120x30.gif" alt="Con la tecnología de Google App Engine" />
-			</a>
-		</p>
-	</footer>
+
 </html>
